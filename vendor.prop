@@ -7,6 +7,9 @@ ro.vendor.lge.aux.camera=2
 vendor.lge.faceprint.use.camera=0
 vendor.camera.aux.physical=5
 
+# Graphics
+ro.surface_flinger.enable_frame_rate_override=false
+
 # Misc
 ro.vendor.lge.build.target_country=COM
 ro.vendor.lge.build.target_operator=LAO
