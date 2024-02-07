@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from judyln device
 $(call inherit-product, device/lge/judyln/device.mk)
 
-# Inherit some common DotOS stuff.
+# Inherit some common ROM stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Overlays (inherit after vendor/cm to ensure we override it)
@@ -49,6 +49,7 @@ TARGET_VENDOR_DEVICE_NAME := judyln
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=judyln \
     PRODUCT_NAME=judyln_lao_com \
+    PRIVATE_BUILD_DESC="judyln_lao_com-user 10 QKQ1.191222.002 8450100201101 release-keys"
 
 BUILD_FINGERPRINT := "lge/judyln_lao_com/judyln:10/QKQ1.191222.002/8450100201101:user/release-keys"
 
